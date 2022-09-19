@@ -136,10 +136,6 @@ def build_model(input_shape):
 
     model.add(keras.layers.Dense(25, activation='softmax'))
 
-    
-
-    model.add(keras.layers.Dense(25, activation='softmax'))
-
     return model
 
 
