@@ -121,15 +121,15 @@ def build_model(input_shape):
     model = keras.Sequential()
 
     model.add(keras.layers.Conv1D(32, 3, activation='relu', input_shape=input_shape, padding='same'))
-    model.add(keras.layers.MaxPooling1D(4, padding='same'))
+    model.add(keras.layers.MaxPooling2D(4, padding='same'))
     model.add(keras.layers.BatchNormalization())
 
     model.add(keras.layers.Conv1D(32, 3, activation='relu', input_shape=input_shape, padding='same'))
-    model.add(keras.layers.MaxPooling1D(4, padding='same'))
+    model.add(keras.layers.MaxPooling2D(4, padding='same'))
     model.add(keras.layers.BatchNormalization())
 
     model.add(keras.layers.Conv1D(32, 3, activation='relu', input_shape=input_shape, padding='same'))
-    model.add(keras.layers.MaxPooling1D(4, padding='same'))
+    model.add(keras.layers.MaxPooling2D(4, padding='same'))
     model.add(keras.layers.BatchNormalization())
 
     model.add(keras.layers.Flatten())
